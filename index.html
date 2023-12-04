@@ -20,7 +20,7 @@
         <a href="#">Graphic Designs</a>
         <a href="#">Cinematography</a>
         <a href="#">What They Say</a>
-        <a href="#">Contact Us</a>
+        <a href="#">Contact</a>
       </div>
     </div>
 
@@ -107,7 +107,54 @@
       </section>
     </div>
 
-    <div class="Contact Us">
+    <div class="What They Say">
+      <section class="What They Say">
+        <div class="what-they-say-content">
+          <h2>What They Say</h2>
+          <div class="separator"></div>
+          <hr class="separator">
+          <table class="testimonial-table">
+            <tr>
+              <td>
+                <p class="name">Robert Vogt</p>
+                <p class="role">Retired Art Instructor</p>
+              </td>
+              <td>
+                <p class="quote">
+                  "Sydney stood out immediately. Her talents were easily apparent (she is easily one of the most talented students I have ever had in Computer Art & Design!), but what stood out even more was here willingness to ask for and accept criticism. For someone with as much innate talent as she possesses, it could be easy for Sydney to "phone it in" and still do extremely well in the class. Instead, she is consistently seeking my advice and then actually implementing changes based on that advice. In this time of virtual instruction, it is also relevant to point out that Sydney always comes to class on time, and is the only student who consistently shows herself on video in the Zoom meetings. She clearly takes to heart my request for as meaningful a connection as we can make through the computer screen, and it speaks volumes about her respect and empathy when she does."
+
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="name">Leanne Lamarche</p>
+                <p class="role">Professional Skating Coach</p>
+              </td>
+              <td>
+                <p class="quote">
+                  "Sydney was a lovely individual to coach. She was always focused, committed and willing to learn. I sincerely believe that Sydney will be an asset to any organization. I can confidently recommend her for any position or undertaking that she chooses to pursue. Her personality and hard work ethic will take her far in life. Please feel free to contact me if you have any questions."
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="name">Nabil Jemal</p>
+                <p class="role">Mathematics Professor</p>
+              </td>
+              <td>
+                <p class="quote">
+                  “Sydney had also shown numerous leadership qualities in my class. She always had her camera on and made sure to participate often in class. When working in groups she often took the lead and made sure that her group was working efficiently. Not only did she make sure they were working efficiently but also that they were having fun. Sydney knows that people perform best when they are comfortable so she always makes an effort to help the people around her feel that way. She helped several of my students this year gain a better understanding of the material inside and outside the classroom. I honestly couldn't have asked for a better student. I sincerely believe that Sydney will bean asset to any organization. I can confidently recommend her for any position or undertaking that she chooses to pursue."
+                </p>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="Contact">
       <!-- Your page content goes here -->
     </div>
   </body>
@@ -205,28 +252,28 @@
     margin-bottom: 30px;
   }
 
-  .photo-grid {
+  .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
   }
 
-  .photo-grid img {
+  .image-grid img {
     width: 100%;
-    height: auto;
-    max-width: calc(100% - 30px);
+    max-width: 409;
+    max-height: 300;
     margin-bottom: 40px;
   }
 
   /* Graphic design section */
   .graphic-designs {
-    background-color: #5B0D0D;
+    background-color: white;
     padding: 40px;
   }
 
   .graphic-designs-content {
     text-align: center;
-    color: #FFFFFF;
+    color: #5B0D0D;
   }
 
   .graphic-designs-content h2 {
@@ -360,5 +407,54 @@
   .right-caption {
     width: 554px;
     text-align: center;
+  }
+
+  /* style for What they say*/
+  .what-they-say {
+    background-color: white;
+    padding: 40px;
+  }
+
+  .what-they-say-content {
+    text-align: center;
+    color: #5B0D0D;
+  }
+
+  .what-they-say-content h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+
+
+  .testimonial-table {
+    width: 100%;
+    border-spacing: 0 40px;
+    /* Adjust vertical spacing between rows */
+  }
+
+  .testimonial-table td {
+    padding: 0 40px;
+    /* Adjust horizontal padding within cells */
+    vertical-align: top;
+  }
+
+  .name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .role {
+    font-family: 'Cardo', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .quote {
+    font-family: 'Cardo', serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.6;
   }
 </style>
