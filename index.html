@@ -155,7 +155,39 @@
     </div>
 
     <div class="Contact">
-      <!-- Your page content goes here -->
+      <section class="contact-section">
+        <h2>Let's Work Together!</h2>
+        <hr class="separator">
+        <div class="contact-details">
+          <div class="contact-info">
+            <p><a href="mailto:swtran@uwaterloo.ca"><img src="email_icon.png" alt="Email icon"> swtran@uwaterloo.ca</a></p>
+            <p><img src="facebook_icon.png" alt="Facebook icon"> @sydneytran</p>
+          </div>
+          <div class="contact-form-container">
+            <form action="/submit_form" method="post">
+              <div class="form-row">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" class="input-field">
+              </div>
+              <div class="form-row">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" class="input-field">
+              </div>
+              <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" class="input-field">
+              </div>
+              <div class="form-row">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="input-field"></textarea>
+              </div>
+              <div class="form-row">
+                <input type="submit" value="Submit" class="submit-button">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 
@@ -373,7 +405,7 @@
 
   .separator {
     width: 733px;
-    height: 2px;
+    height: 3px;
     background-color: #FFFFFF;
     margin-bottom: 30px;
   }
@@ -456,5 +488,87 @@
     font-size: 15px;
     font-style: italic;
     line-height: 1.6;
+  }
+
+  /* style for contact */
+  .contact-section {
+    background-color: #5B0D0D;
+    color: white;
+    padding: 40px;
+  }
+
+  .contact-section h2 {
+    padding-left: 70px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+
+  .separator {
+    width: 733px;
+    height: 2px;
+    background-color: white;
+    margin: 30px 0;
+  }
+
+  .contact-details {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-info {
+    flex: 1;
+    text-align: center;
+  }
+
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+
+  .contact-form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    background-color: white;
+    padding: 20px;
+    width: 837px;
+    height: 350px;
+  }
+
+  .form-row {
+    margin-bottom: 20px;
+  }
+
+  label {
+    color: #5B0D0D;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #7C7C7C;
+  }
+
+  .submit-button {
+    width: 208px;
+    height: 55px;
+    background-color: #5B0D0D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .submit-button:hover {
+    background-color: white;
+    color: #5B0D0D;
+    border: 2px solid #5B0D0D;
   }
 </style>
