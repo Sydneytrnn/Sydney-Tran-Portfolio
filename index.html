@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="eng-ca">
-  
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-sale=1.0, width=device-width">
@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family= Cardo|Josefin Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  
+
   <body>
     <div class="navbar">
       <div class="left-section">
@@ -23,27 +23,53 @@
       </div>
     </div>
 
-    <div class="About Me">
-      <!-- Your page content goes here -->
+    <div class="content">
+      <section class="about-me">
+        <div class="about-image">
+          <img src="Sydney_Tran_MainImage.png" alt="Sydney Tran">
+        </div>
+        <div class="about-text">
+          <h2>Hello, Bonjour :)</h2>
+          <p>My name is Sydney Tran and I am the heart of creativity for my users.</p>
+          <p>
+            I design pieces that are meaningful, unique, and impactful.
+            <br>
+            Currently, Communications Director @Students for Music and Wellness, Social Media Intern @Ascend Canada and Director of Marketing for its University of Waterloo student chapter, Product Design Intern @SwayBrand, and VP Marketing @University of Waterloo Chinese Student Association
+            <br>
+            Prev Marketing Intern @TD Bank
+          </p>
+        </div>
+      </section>
     </div>
-    
-    <div class="Photography">
-      <!-- Your page content goes here -->
+
+   <div class="content">
+  <section class="my-photography">
+    <h2 class="section-title">My Photography</h2>
+    <div class="divider"></div>
+    <p class="photography-blurb">
+      I adeptly handle seven different photographic styles—including product, fashion, long exposure, portraits, landscapes, wildlife, and action pictures—all while capturing moments that go beyond the usual and shed light on distinctive viewpoints. I have an intuitive eye for detail and am proficient in Adobe Lightroom. My artistic ability combines compositional brilliance with the technical dexterity of using a DSLR to create visually compelling and inspirational storytelling.
+    </p>
+    <div class="image-grid">
+      <img src="path_to_image_1.jpg" alt="Photography 1">
+      <img src="path_to_image_2.jpg" alt="Photography 2">
+      <!-- Add more image elements as needed -->
     </div>
-    
+  </section>
+</div>
+
     <div class="Graphic Designs">
       <!-- Your page content goes here -->
     </div>
-    
+
     <div class="Cinematography">
       <!-- Your page content goes here -->
     </div>
-    
-     <div class="Contact Us">
+
+    <div class="Contact Us">
       <!-- Your page content goes here -->
     </div>
   </body>
-  
+
 </html>
 
 <style>
@@ -79,4 +105,70 @@
   .right-section a:last-child {
     margin-right: 0;
   }
+
+  /* About Me Section*/
+  .about-me {
+    display: flex;
+    align-items: center;
+    padding: 40px 70px;
+  }
+
+  .about-image img {
+    width: 400;
+    height: 530;
+  }
+
+  .about-text {
+    margin-left: 40px;
+    font-family: "Cardo", serif;
+  }
+
+  .about-text h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+
+  .about-text p {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  
+  /* Styles for the My Photography section */
+.my-photography {
+  text-align: center;
+  padding: 60px 70px;
+}
+
+.section-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 60px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.divider {
+  width: 733px;
+  height: 2px;
+  background-color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.photography-blurb {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.image-grid img {
+  max-width: 100%;
+  height: auto;
+}
 </style>
