@@ -15,7 +15,7 @@
         Sydney Tran
       </div>
       <div class="right-section">
-        <a href="#">About Me</a>
+        <a href="#about">About Me</a>
         <a href="#">Photography</a>
         <a href="#">Graphic Designs</a>
         <a href="#">Cinematography</a>
@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div class="content">
+    <div id="about" class="content">
       <section class="about-me">
         <div class="about-image">
           <img src="Sydney_Tran_MainImage.png" alt="Sydney Tran">
@@ -85,22 +85,18 @@
           <p class="cinematography-blurb">
             I have a strong sense of storytelling and am skilled with the Adobe Suite, especially Rush and Premiere Pro. I use these skills to craft complex stories into engaging documentaries and movies. Through the use of mood boards, storyboards, and a variety of lighting, audio, and filmmaking tools, I create immersive visual experiences by bringing the imagination to life.
           </p>
-          <div class="cinematography-images">
-            <div class="film-grid">
-                      <div class="cinematography-image">
-                        <a href="https://youtu.be/rqYzTU765tQ" target="_blank">
-                          <img src="TheArtofMovingOn.png" alt="Cinematography Image 1" width="554" height="308">
-                        </a>
-                        <p>
-                        <p>This silent film, <a href="https://youtu.be/rqYzTU765tQ" target="_blank" style="color: #5B0D0D;text-decoration: underline;">The Art of Moving On</a>, tells a story of a young woman experiencing heartbreak. This documentary aims to express a storyline in two emotions—freedom & loneliness—simply through a camera lens.</p>
-                      </div>
-                      <div class="cinematography-image">
-                        <a href="https://youtu.be/g411S9yl8dU" target="_blank">
-                          <img src="TuningDreams.png" alt="Cinematography Image 2" width="554" height="308">
-                        </a>
-                        <p>This documentary, <a href="https://youtu.be/g411S9yl8dU" target="_blank" style="color: #5B0D0D;text-decoration: underline;">Tuning Dreams</a>, tells a story of a recent graduate student fighting for his dreams. This documentary aims to reveal the strenuous days that come with making music and being unsure of what the future holds.</p>
-                      </div>
-              </div>
+          <div class="film-grid">
+            <a href="https://youtu.be/rqYzTU765tQ" target="_blank">
+              <img src="TheArtofMovingOn.png" alt="Art"> </a>
+
+            <a href="https://youtu.be/g411S9yl8dU" target="_blank">
+              <img src="TuningDreams.png" alt="Tuning"> </a>
+
+            <p>This silent film, <a href="https://youtu.be/rqYzTU765tQ" target="_blank" style="color: #5B0D0D; text-decoration: underline;">The Art of Moving On</a>, tells a story of a young woman experiencing heartbreak. This documentary aims to express a storyline in two emotions—freedom & loneliness—simply through a camera lens.</p>
+
+            <p>This documentary, <a href="https://youtu.be/g411S9yl8dU" target="_blank" style="color: #5B0D0D;text-decoration: underline;">Tuning Dreams</a>, tells a story of a recent graduate student fighting for his dreams. This documentary aims to reveal the strenuous days that come with making music and being unsure of what the future holds.</p>
+
+
           </div>
         </div>
       </section>
@@ -363,18 +359,6 @@
     margin-bottom: 30px;
   }
 
-  .cinematography-images {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40px;
-    align-items: center;
-  }
-
-  .cinematography-images img {
-    width: 554px;
-    height: 308px;
-  }
-
   .caption {
     display: flex;
     justify-content: space-between;
@@ -386,8 +370,8 @@
     width: 554px;
     text-align: center;
   }
-  
-   .film-grid {
+
+  .film-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
@@ -397,10 +381,9 @@
   .film-grid img {
     width: 100%;
     place-items: center;
-    max-width: 500;
-    max-height: 275;
-    margin-bottom: 40px;
-
+    max-width: 500px;
+    max-height: 275px;
+    margin-bottom: 0px;
   }
 
   /* style for What they say*/
