@@ -53,9 +53,6 @@
           I adeptly handle seven different photographic styles—including product, fashion, long exposure, portraits, landscapes, wildlife, and action pictures—all while capturing moments that go beyond the usual and shed light on distinctive viewpoints. I have an intuitive eye for detail and am proficient in Adobe Lightroom. My artistic ability combines compositional brilliance with the technical dexterity of using a DSLR to create visually compelling and inspirational storytelling.
         </p>
         <div class="image-grid">
-          <img src="Wildlife.png" alt="Wildlife">
-          <img src="Portrait.png" alt="Portrait">
-          <img src="Action.png" alt="Action">
           <img src="Product.png" alt="Product">
           <img src="Landscape.png" alt="Landscape">
           <img src="LongExposure.png" alt="LongExposure">
@@ -287,13 +284,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+    place-items: center;
   }
 
   .image-grid img {
     width: 100%;
+    place-items: center;
     max-width: 409;
     max-height: 300;
     margin-bottom: 40px;
+    
   }
 
   /* Graphic design section */
