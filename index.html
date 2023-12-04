@@ -47,7 +47,7 @@
 
     <div class="content">
       <section class="photography">
-        <h2>My Photography</h2>
+        <h2>Photography</h2>
         <div class="separator"></div>
         <p>
           I adeptly handle seven different photographic styles—including product, fashion, long exposure, portraits, landscapes, wildlife, and action pictures—all while capturing moments that go beyond the usual and shed light on distinctive viewpoints. I have an intuitive eye for detail and am proficient in Adobe Lightroom. My artistic ability combines compositional brilliance with the technical dexterity of using a DSLR to create visually compelling and inspirational storytelling.
@@ -64,7 +64,20 @@
     </div>
 
     <div class="Graphic Designs">
-      <!-- Your page content goes here -->
+      <section class="graphic-designs">
+        <div class="graphic-designs-content">
+          <h2>Graphic Designs</h2>
+          <div class="separator"></div>
+          <p class="designs-blurb">
+            I am an expert in Adobe Illustrator and Photoshop, and I use my imagination to create visually striking and inventive designs by skillfully utilizing a variety of tools, such as 3D rendering, the accuracy of the pen tool, and the fluidity of the warp tool.
+          </p>
+          <div class="designs-grid">
+            <img src="UwcsaBonfire.png" alt="Bonfire">
+            <img src="UwcsaHiring.png" alt="Hiring">
+            <img src="UwcsaOrientation.png" alt="Orientation">
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="Cinematography">
@@ -177,7 +190,49 @@
     width: 100%;
     height: auto;
     max-width: calc(100% - 30px);
+    margin-bottom: 40px;
+  }
+
+  /* Graphic design section */
+  .graphic-designs {
+    background-color: #5B0D0D;
+    padding: 40px;
+  }
+
+  .graphic-designs-content {
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .graphic-designs-content h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
     margin-bottom: 30px;
+  }
+
+  .separator {
+    width: 733px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+
+  .designs-blurb {
+    font-family: 'Cardo', serif;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .designs-grid {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .designs-grid img {
+    width: 415px;
+    height: 415px;
   }
 
   /*
