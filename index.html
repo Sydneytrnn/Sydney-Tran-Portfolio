@@ -81,7 +81,30 @@
     </div>
 
     <div class="Cinematography">
-      <!-- Your page content goes here -->
+      <section class="cinematography">
+        <div class="cinematography-content">
+          <h2>Cinematography</h2>
+          <div class="separator"></div>
+          <p class="cinematography-blurb">
+            I have a strong sense of storytelling and am skilled with the Adobe Suite, especially Rush and Premiere Pro. I use these skills to craft complex stories into engaging documentaries and movies. Through the use of mood boards, storyboards, and a variety of lighting, audio, and filmmaking tools, I create immersive visual experiences by bringing the imagination to life.
+          </p>
+          <div class="cinematography-images">
+            <div class="cinematography-image">
+              <a href="https://youtu.be/rqYzTU765tQ" target="_blank">
+                <img src="TheArtofMovingOn.png" alt="Cinematography Image 1" width="554" height="308">
+              </a>
+              <p>
+              <p>This silent film, <a href="https://youtu.be/rqYzTU765tQ" target="_blank" style="color: #5B0D0D;text-decoration: underline;">The Art of Moving On</a>, tells a story of a young woman experiencing heartbreak. This documentary aims to express a storyline in two emotions—freedom & loneliness—simply through a camera lens.</p>
+            </div>
+            <div class="cinematography-image">
+              <a href="https://youtu.be/g411S9yl8dU" target="_blank">
+                <img src="TuningDreams.png" alt="Cinematography Image 2" width="554" height="308">
+              </a>
+              <p>This documentary, <a href="https://youtu.be/g411S9yl8dU" target="_blank" style="color: #5B0D0D;text-decoration: underline;">Tuning Dreams</a>, tells a story of a recent graduate student fighting for his dreams. This documentary aims to reveal the strenuous days that come with making music and being unsure of what the future holds.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="Contact Us">
@@ -146,12 +169,14 @@
   .about-text h2 {
     font-family: "Josefin Sans", sans-serif;
     font-size: 80px;
+    color: #5B0D0D;
     margin-bottom: 20px;
   }
 
   .about-text p {
     font-size: 24px;
     line-height: 1.5;
+    color: #4F2E2E
   }
 
   /* Style for Photography section */
@@ -205,7 +230,7 @@
   }
 
   .graphic-designs-content h2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 60px;
     margin-bottom: 30px;
   }
@@ -218,7 +243,7 @@
   }
 
   .designs-blurb {
-    font-family: 'Cardo', serif;
+    font-family: "Cardo", serif;
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -235,23 +260,105 @@
     height: 415px;
   }
 
-  /*
-  Sydney_Tran_MainImage.png
-  
-  Action.png
-  Wildlife.png
-  Landscape.png
-  LongExposure.png
-  Portrait.png
-  Product.png
-  
-  UwcsaBonfire.png
-  UwcsaHiring.png
-  UwcsaOrientation.png
-  
-  TheArtofMovingOn.png
-  TuningDreams.png
-  
-  Fashion.png
-  */
+  /* Style for Cinematography */
+  .cinematography {
+    background-color: #7C7C7C;
+    padding: 40px;
+  }
+
+  .cinematography-content {
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .cinematography-content h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+
+  .separator {
+    width: 733px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+
+  .cinema-blurb {
+    font-family: 'Cardo', serif;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .cinema-images {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .cinema-image-left,
+  .cinema-image-right {
+    width: 554px;
+  }
+
+  .cinema-image {
+    width: 554px;
+    height: 308px;
+  }
+
+  /* style for Cinematography */
+  .cinematography {
+    background-color: #7C7C7C;
+    padding: 40px;
+    color: #FFFFFF;
+  }
+
+  .cinematography-content {
+    text-align: center;
+  }
+
+  .cinematography-content h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+
+  .separator {
+    width: 733px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+
+  .cinematography-blurb {
+    font-family: "Cardo", serif;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .cinematography-images {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+  }
+
+  .cinematography-images img {
+    width: 554px;
+    height: 308px;
+  }
+
+  .caption {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .left-caption,
+  .right-caption {
+    width: 554px;
+    text-align: center;
+  }
 </style>
