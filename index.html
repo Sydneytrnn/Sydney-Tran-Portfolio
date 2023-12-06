@@ -7,7 +7,7 @@
     <title>Sydney Tran Portfolio </title>
     <link href="https://fonts.googleapis.com/css?family= Cardo|Josefin Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
+  </head> 
 
   <body>
     <div class="navbar">
@@ -15,12 +15,12 @@
         Sydney Tran
       </div>
       <div class="right-section">
-        <a href="#about">About Me</a>
-        <a href="#photography">Photography</a>
-        <a href="#graphic designs">Graphic Designs</a>
-        <a href="#cinematography">Cinematography</a>
-        <a href="#what they say">What They Say</a>
-        <a href="#contact">Contact</a>
+        <a href="#About Me">About Me</a>
+        <a href="#Photography">Photography</a>
+        <a href="#Graphic Designs">Graphic Designs</a>
+        <a href="#Cinematography">Cinematography</a>
+        <a href="#What They Say">What They Say</a>
+        <a href="#Contact">Contact</a>
       </div>
     </div>
 
@@ -31,7 +31,7 @@
         </div>
         <div class="about-text">
           <h1>
-            <a name="about">Hello, Bonjour :)</a>
+            <a name="About Me">Hello, Bonjour :)</a>
           </h1>
           <p>My name is Sydney Tran and I am the <u>heart of creativity</u> for my users.</p>
           <p>
@@ -49,9 +49,9 @@
 
     <div class="content">
       <section class="photography">
-        <h1>
-          <a name="photography">Photography</a>
-        </h1>
+         <h1>
+            <a name="Photography">Photography</a>
+          </h1>
         <div class="white-line"></div>
         <p>
           I adeptly handle seven different photographic styles—including product, fashion, long exposure, portraits, landscapes, wildlife, and action pictures—all while capturing moments that go beyond the usual and shed light on distinctive viewpoints. I have an intuitive eye for detail and am proficient in Adobe Lightroom. My artistic ability combines compositional brilliance with the technical dexterity of using a DSLR to create visually compelling and inspirational storytelling.
@@ -67,8 +67,8 @@
     <div class="Graphic Designs">
       <section class="graphic-designs">
         <div class="graphic-designs-content">
-          <h1>
-            <a name="graphic designs">Graphic Designs</a>
+           <h1>
+            <a name="Graphic Designs">Graphic Designs</a>
           </h1>
           <div class="red-line"></div>
           <p class="designs-blurb">
@@ -86,8 +86,8 @@
     <div class="Cinematography">
       <section class="cinematography">
         <div class="cinematography-content">
-          <h1>
-            <a name="cinematography">Cinematography</a>
+           <h1>
+            <a name="Cinematography">Cinematography</a>
           </h1>
           <div class="white-line"></div>
           <p class="cinematography-blurb">
@@ -111,8 +111,8 @@
     <div class="What They Say">
       <section class="What They Say">
         <div class="what-they-say-content">
-          <h1>
-            <a name="what they say">What They Say</a>
+           <h1>
+            <a name="What They Say">What They Say</a>
           </h1>
           <div class="red-line"></div>
           <table class="testimonial-table">
@@ -154,11 +154,11 @@
       </section>
     </div>
 
-    <div class="Contact">
+    <div  class="Contact">
       <section class="contact-section">
-        <h1>
-          <a name="contact">Let's Work Together!</a>
-        </h1>
+         <h1>
+            <a name="Contact">Let's Work Together!</a>
+          </h1>
         <div class="contact-details">
           <div class="contact-form-container">
             <form action="mailto:ssss@uwaterloo.ca" method="post" enctype="text/plain">
@@ -176,7 +176,7 @@
               </div>
               <div class="form-row">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" class="input-field"></textarea>
+                <input type="text" id="message" name="message" class="input-field">
               </div>
               <div class="form-row">
                 <input type="submit" value="Submit" class="submit-button">
@@ -226,6 +226,7 @@
     margin-right: 0;
   }
 
+
   /* Style for About Me Section*/
   .about-me {
     display: flex;
@@ -236,6 +237,7 @@
   .about-image img {
     width: 400;
     height: 530;
+    float: left;
   }
 
   .about-text {
@@ -395,6 +397,30 @@
     margin-bottom: 0px;
   }
 
+  .film-grid:link {
+    color: #5B0D0D;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .film-grid:visited {
+    color: gray;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .film-grid:hover {
+    color: #5B0D0D;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .film-grid:active {
+    color: #4F2E2E;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
   /* style for What they say*/
   .what-they-say {
     background-color: white;
@@ -450,11 +476,10 @@
   }
 
   .contact-section h1 {
-    padding-left: 70px;
     font-family: "Josefin Sans", sans-serif;
     font-size: 60px;
     margin-bottom: 30px;
-    float: left;
+    text-align: center;
   }
 
   .contact-details {
@@ -475,15 +500,13 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   form {
     background-color: white;
     padding: 20px;
-    width: 837px;
-    height: 350px;
-  
+    width: 80%;
+    height: 370px;
   }
 
   .form-row {
